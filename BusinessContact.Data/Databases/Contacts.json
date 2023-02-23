@@ -1,0 +1,50 @@
+[
+  {
+    "Email": "rustamxon@gmail.com",
+    "Job": "dasturchi",
+    "Address": "Kokand",
+    "Id": 1,
+    "FirstName": "Rustamxon",
+    "LastName": "Rahimov",
+    "PhoneNumber": "+998908574142",
+    "DateOfBirth": "20.04.2004",
+    "CreatedAt": "2023-02-22T21:02:24.2666119+05:00",
+    "LastUpdatedAt": null
+  },
+  {
+    "Email": "firdavs@gmail.com",
+    "Job": "dasturchi",
+    "Address": "Tashkent",
+    "Id": 2,
+    "FirstName": "Firdavs",
+    "LastName": "Muzaffarov",
+    "PhoneNumber": "+998993400216",
+    "DateOfBirth": "12.10.2003",
+    "CreatedAt": "2023-02-22T21:05:02.8993615+05:00",
+    "LastUpdatedAt": null
+  },
+  {
+    "Email": "elonmusk@gmail.com",
+    "Job": "CEO",
+    "Address": "Pretoria",
+    "Id": 3,
+    "FirstName": "Elon",
+    "LastName": "Musk",
+    "PhoneNumber": "+15555551234",
+    "DateOfBirth": "28.06.1971",
+    "CreatedAt": "2023-02-22T21:08:50.2003713+05:00",
+    "LastUpdatedAt": null
+  },
+  {
+    "Email": null,
+    "Job": null,
+    "Address": "Kokand",
+    "Id": 4,
+    "FirstName": "Bositxon",
+    "LastName": "Turdiyev",
+    "PhoneNumber": "+998906561997",
+    "DateOfBirth": "05.08.1997",
+    "CreatedAt": "2023-02-23T13:32:49.0447259+05:00",
+    "LastUpdatedAt": null
+  }
+]

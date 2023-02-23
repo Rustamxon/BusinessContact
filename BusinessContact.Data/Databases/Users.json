@@ -1,0 +1,50 @@
+[
+  {
+    "Contactlar": [
+      {
+        "Email": null,
+        "Job": null,
+        "Address": "Kokand",
+        "Id": 4,
+        "FirstName": "Bositxon",
+        "LastName": "Turdiyev",
+        "PhoneNumber": "+998906561997",
+        "DateOfBirth": "05.08.1997",
+        "CreatedAt": "2023-02-23T13:32:49.0447259+05:00",
+        "LastUpdatedAt": null
+      }
+    ],
+    "Password": "password",
+    "Id": 1,
+    "FirstName": "rustamxon",
+    "LastName": "rahimov",
+    "PhoneNumber": "+998908574142",
+    "DateOfBirth": "20.04.2004",
+    "CreatedAt": "2023-02-23T13:06:15.090099+05:00",
+    "LastUpdatedAt": null
+  },
+  {
+    "Contactlar": [
+      {
+        "Email": null,
+        "Job": null,
+        "Address": "Kokand",
+        "Id": 4,
+        "FirstName": "Bositxon",
+        "LastName": "Turdiyev",
+        "PhoneNumber": "+998906561997",
+        "DateOfBirth": "05.08.1997",
+        "CreatedAt": "2023-02-23T13:32:49.0447259+05:00",
+        "LastUpdatedAt": null
+      }
+    ],
+    "Password": "futbol",
+    "Id": 2,
+    "FirstName": "javohir",
+    "LastName": "hoshimov",
+    "PhoneNumber": "+998905862427",
+    "DateOfBirth": "12.12.2004",
+    "CreatedAt": "2023-02-23T13:10:43.7821727+05:00",
+    "LastUpdatedAt": null
+  }
+]
