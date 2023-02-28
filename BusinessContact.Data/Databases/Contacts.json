@@ -1,5 +1,17 @@
 [
   {
+    "Email": "email@gmail.com",
+    "Job": "kasb",
+    "Address": "shahar",
+    "Id": 3,
+    "FirstName": "ism",
+    "LastName": "familiya",
+    "PhoneNumber": "+998777777777",
+    "DateOfBirth": "00.00.0000",
+    "CreatedAt": "0001-01-01T00:00:00",
+    "LastUpdatedAt": null
+  },
+  {
     "Email": "rustamxon@gmail.com",
     "Job": "dasturchi",
     "Address": "Kokand",
@@ -21,18 +33,6 @@
     "PhoneNumber": "+998993400216",
     "DateOfBirth": "12.10.2003",
     "CreatedAt": "2023-02-22T21:05:02.8993615+05:00",
-    "LastUpdatedAt": null
-  },
-  {
-    "Email": "elonmusk@gmail.com",
-    "Job": "CEO",
-    "Address": "Pretoria",
-    "Id": 3,
-    "FirstName": "Elon",
-    "LastName": "Musk",
-    "PhoneNumber": "+15555551234",
-    "DateOfBirth": "28.06.1971",
-    "CreatedAt": "2023-02-22T21:08:50.2003713+05:00",
     "LastUpdatedAt": null
   },
   {

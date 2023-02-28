@@ -92,9 +92,9 @@ namespace BusinessContact.Data.Repositories
             var index = models.IndexOf(model);
 
             models.Remove(updatingModel);
-
+            
             model.LastUpdatedAt = updatingModel.LastUpdatedAt;
-            models.Insert(index, model);
+            models.Insert(index + 1, model);
 
             File.WriteAllText(Path, JsonConvert.SerializeObject(models, Formatting.Indented));
 

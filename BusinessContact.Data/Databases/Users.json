@@ -1,19 +1,6 @@
 [
   {
-    "Contactlar": [
-      {
-        "Email": null,
-        "Job": null,
-        "Address": "Kokand",
-        "Id": 4,
-        "FirstName": "Bositxon",
-        "LastName": "Turdiyev",
-        "PhoneNumber": "+998906561997",
-        "DateOfBirth": "05.08.1997",
-        "CreatedAt": "2023-02-23T13:32:49.0447259+05:00",
-        "LastUpdatedAt": null
-      }
-    ],
+    "Contactlar": [],
     "Password": "password",
     "Id": 1,
     "FirstName": "rustamxon",

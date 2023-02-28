@@ -64,7 +64,8 @@ namespace BusinessContact.Service.Services
             {
                 if (user.Password == password)
                 {
-                    var userContact = user.Contactlar.FirstOrDefault(c => c.FirstName == Addingcontact.FirstName);
+                   // var userContact = user.Contactlar.FirstOrDefault(c => c.FirstName == Addingcontact.FirstName);
+                         Console.WriteLine("hello");
 
                         var AddContact = new Contacts()
                         {
@@ -79,10 +80,12 @@ namespace BusinessContact.Service.Services
                         };
 
                         //obshiy contactlar bazasiga qo'shish 
-                        contactsRepository.CreateAsync(AddContact);
-
+                        await  contactsRepository.CreateAsync(AddContact);
+                        Console.WriteLine("ojojoj");
                         //userdi ozini contactlariga qoshish
-                        user.Contactlar.Add(AddContact);
+                        var sss = user.Contactlar.Append(AddContact);
+                        //user.Contactlar += user.Contactlar.Append(AddContact);
+                        Console.WriteLine("sasas");
 
                         return new GenericResponce<Contacts>()
                         {
