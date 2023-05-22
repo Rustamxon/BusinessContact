@@ -1,14 +1,10 @@
-﻿using BusinessContact.Domain.Commons;
-using BusinessContact.Domain.Enums;
-
-namespace BusinessContact.Domain.Entities
+﻿namespace BusinessContact.Service.DTOs.Users
 {
-    public class User : Auditable
+    public class UserForCreationDto
     {
         public string FirstName { get; set; }
         public string LastName { get; set; }
         public string PhoneNumber { get; set; }
         public string Email { get; set; }
-        public UserRole Role { get; set; }
     }
 }
