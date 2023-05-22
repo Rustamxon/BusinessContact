@@ -19,7 +19,7 @@ namespace BusinessContact.Data.Repositories
 
         private async void StartUp()
         {
-            if (typeof(TEntity) == typeof(Users))
+            if (typeof(TEntity) == typeof(User))
             {
                 Path = DatabasePaths.USERS_PATH;
             }

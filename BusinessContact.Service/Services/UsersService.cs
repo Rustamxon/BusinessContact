@@ -14,22 +14,22 @@ namespace BusinessContact.Service.Services
 {
     public class UsersService : IUsersService
     {
-        private readonly IGenericRepository<Users> usersRepository;
+        private readonly IGenericRepository<User> usersRepository;
         private readonly IContactsService contactsService;
         private readonly IGenericRepository<Contacts> contactsRepository;
 
         public UsersService()
         {
-            usersRepository = new GenericRepository<Users>();
+            usersRepository = new GenericRepository<User>();
             contactsService = new ContactsService();
             contactsRepository = new GenericRepository<Contacts>();
         }
-        public async Task<GenericResponce<Users>> CreateAsync(UsersDto usersDto)
+        public async Task<GenericResponce<User>> CreateAsync(UsersDto usersDto)
         {
             var user = (await this.usersRepository.GetAllAsync()).FirstOrDefault(x => x.FirstName == usersDto.FirstName);
             if (user is not null) 
             {
-                return new GenericResponce<Users>()
+                return new GenericResponce<User>()
                 {
                     StatusCode = 409,
                     Message = "This user is already exist",
@@ -37,7 +37,7 @@ namespace BusinessContact.Service.Services
                 };
             }
 
-            var newUser = new Users()
+            var newUser = new User()
             {
                 FirstName = usersDto.FirstName,
                 LastName = usersDto.LastName,
@@ -48,7 +48,7 @@ namespace BusinessContact.Service.Services
             
             var result = await this.usersRepository.CreateAsync(newUser);
 
-            return new GenericResponce<Users>()
+            return new GenericResponce<User>()
             {
                 StatusCode = 200,
                 Message = "OK",
@@ -109,13 +109,13 @@ namespace BusinessContact.Service.Services
             };
         }
 
-        public async Task<GenericResponce<Users>> DeleteAsync(long id)
+        public async Task<GenericResponce<User>> DeleteAsync(long id)
         {
             var user = await usersRepository.GetByIdAsync(id);
 
             if (user is null)
             {
-                return new GenericResponce<Users>()
+                return new GenericResponce<User>()
                 {
                     StatusCode = 404,
                     Message = "User not found",
@@ -125,7 +125,7 @@ namespace BusinessContact.Service.Services
 
             await usersRepository.DeleteAsync(id);
 
-            return new GenericResponce<Users>()
+            return new GenericResponce<User>()
             {
                 StatusCode = 200,
                 Message = "OK",
@@ -133,11 +133,11 @@ namespace BusinessContact.Service.Services
             };
         }
 
-        public async Task<GenericResponce<List<Users>>> GetAllAsync()
+        public async Task<GenericResponce<List<User>>> GetAllAsync()
         {
             var users = await this.usersRepository.GetAllAsync();
 
-            return new GenericResponce<List<Users>>()
+            return new GenericResponce<List<User>>()
             {
                 StatusCode = 200,
                 Message = "Ok",
@@ -145,12 +145,12 @@ namespace BusinessContact.Service.Services
             };
         }
 
-        public async Task<GenericResponce<Users>> GetByIdAsync(long id)
+        public async Task<GenericResponce<User>> GetByIdAsync(long id)
         {
             var user = (await this.usersRepository.GetAllAsync()).FirstOrDefault(u => u.Id == id);
             if (user is null)
             {
-                return new GenericResponce<Users>()
+                return new GenericResponce<User>()
                 {
                     StatusCode = 404,
                     Message = "User not found",
@@ -158,7 +158,7 @@ namespace BusinessContact.Service.Services
                 };
             }
 
-            return new GenericResponce<Users>()
+            return new GenericResponce<User>()
             {
                 StatusCode = 200,
                 Message = "Ok",
@@ -209,14 +209,14 @@ namespace BusinessContact.Service.Services
             };
         }
 
-        public async Task<GenericResponce<Users>> UpdateAsync(long id, UsersDto usersDto)
+        public async Task<GenericResponce<User>> UpdateAsync(long id, UsersDto usersDto)
         {
             var allUsers = await this.usersRepository.GetAllAsync();
             var user = allUsers.FirstOrDefault(u => u.Id == id);
 
             if (user is null) 
             {
-                return new GenericResponce<Users>()
+                return new GenericResponce<User>()
                 {
                     StatusCode = 404,
                     Message = "User not found",
@@ -234,7 +234,7 @@ namespace BusinessContact.Service.Services
 
             await this.usersRepository.UpdateAsync(user);
 
-            return new GenericResponce<Users>()
+            return new GenericResponce<User>()
             {
                 StatusCode = 200,
                 Message = "Successfully updated",

@@ -28,7 +28,7 @@ namespace BusinessContact.Presentation
             //var contact1 = contactService.GetByNameAsync("usta");
             //Console.WriteLine(contact1.Result.Value.FirstName);
 
-            IGenericRepository<Users> genericRepository = new GenericRepository<Users>();
+            IGenericRepository<User> genericRepository = new GenericRepository<User>();
             //genericRepository.CreateAsync(user);
             //var user1 = genericRepository.GetByIdAsync(user.Id);
             //Console.WriteLine(user1.Result.FirstName);
