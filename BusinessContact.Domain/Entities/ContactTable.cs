@@ -7,7 +7,7 @@ namespace BusinessContact.Domain.Entities
         public long UserId { get; set; }
         public User User { get; set; }
 
-        
+
         public long ContactId { get; set; }
         public User contact { get; set; }
     }
