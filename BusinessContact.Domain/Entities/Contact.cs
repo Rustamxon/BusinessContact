@@ -1,6 +1,12 @@
-﻿namespace BusinessContact.Domain.Entities
+﻿using BusinessContact.Domain.Commons;
+
+namespace BusinessContact.Domain.Entities
 {
-    internal class Contact
+    public class Contact : Auditable
     {
+        public string FirstName { get; set; }
+        public string LastName { get; set; }
+        public string Phone { get; set; }
+        public string Email { get; set; }
     }
 }
