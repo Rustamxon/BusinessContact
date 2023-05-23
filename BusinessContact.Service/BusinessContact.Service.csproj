@@ -11,8 +11,4 @@
     <ProjectReference Include="..\BusinessContact.Domain\BusinessContact.Domain.csproj" />
   </ItemGroup>
 
-  <ItemGroup>
-    <Folder Include="Services\" />
-  </ItemGroup>
-
 </Project>
