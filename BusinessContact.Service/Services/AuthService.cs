@@ -2,6 +2,7 @@
 using BusinessContact.Service.DTOs.Login;
 using BusinessContact.Service.Exceptions;
 using BusinessContact.Service.Interfaces;
+using BusinessContact.Shared.Helpers;
 using Microsoft.Extensions.Configuration;
 using Microsoft.IdentityModel.Tokens;
 using System.IdentityModel.Tokens.Jwt;

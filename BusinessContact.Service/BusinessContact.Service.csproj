@@ -16,6 +16,7 @@
   <ItemGroup>
     <ProjectReference Include="..\BusinessContact.Data\BusinessContact.Data.csproj" />
     <ProjectReference Include="..\BusinessContact.Domain\BusinessContact.Domain.csproj" />
+    <ProjectReference Include="..\BusinessContact.Shared\BusinessContact.Shared.csproj" />
   </ItemGroup>
 
 </Project>
