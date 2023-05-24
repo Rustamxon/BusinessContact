@@ -1,6 +1,16 @@
-﻿namespace BusinessContact.Service.DTOs.Contacts
+﻿using System.ComponentModel.DataAnnotations;
+
+namespace BusinessContact.Service.DTOs.Contacts
 {
-    internal class ContactForCreationDto
+    public class ContactForCreationDto
     {
+        [Required(ErrorMessage = "FirstName is required")]
+        public string FirstName { get; set; }
+
+        public string LastName { get; set; }
+
+        [Required(ErrorMessage = "Phone number is required")]
+        public string Phone { get; set; }
+        public string Email { get; set; }
     }
 }
