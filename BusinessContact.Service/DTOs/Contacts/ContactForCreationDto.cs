@@ -11,6 +11,7 @@ namespace BusinessContact.Service.DTOs.Contacts
 
         [Required(ErrorMessage = "Phone number is required")]
         public string Phone { get; set; }
+        [EmailAddress]
         public string Email { get; set; }
     }
 }
