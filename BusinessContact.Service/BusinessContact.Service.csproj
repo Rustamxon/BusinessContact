@@ -7,6 +7,10 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Http.Features" Version="5.0.17" />
+  </ItemGroup>
+
+  <ItemGroup>
     <ProjectReference Include="..\BusinessContact.Data\BusinessContact.Data.csproj" />
     <ProjectReference Include="..\BusinessContact.Domain\BusinessContact.Domain.csproj" />
   </ItemGroup>
