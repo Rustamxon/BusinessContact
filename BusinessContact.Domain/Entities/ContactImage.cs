@@ -2,11 +2,11 @@
 
 namespace BusinessContact.Domain.Entities
 {
-    public class UserImage : Auditable
+    public class ContactImage : Auditable
     {
         public string Name { get; set; }
         public string Path { get; set; }
-        public long UserId { get; set; }
-        public User User { get; set; }
+        public long ContactId { get; set; }
+        public Contact Contact { get; set; }
     }
 }
