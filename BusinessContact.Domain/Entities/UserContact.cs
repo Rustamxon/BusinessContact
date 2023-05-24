@@ -2,7 +2,7 @@
 
 namespace BusinessContact.Domain.Entities
 {
-    public class ContactTable : Auditable
+    public class UserContact : Auditable
     {
         public long UserId { get; set; }
         public User User { get; set; }
