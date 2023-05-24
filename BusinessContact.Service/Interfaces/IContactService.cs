@@ -1,6 +1,6 @@
 ﻿namespace BusinessContact.Service.Interfaces
 {
-    internal class IContactService
+    public interface IContactService
     {
     }
 }

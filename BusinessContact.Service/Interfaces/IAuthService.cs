@@ -1,6 +1,9 @@
-﻿namespace BusinessContact.Service.Interfaces
+﻿using BusinessContact.Service.DTOs.Login;
+
+namespace BusinessContact.Service.Interfaces
 {
-    internal class IAuthService
+    public interface IAuthService
     {
+        Task<LoginForResultDto> AuthenticateAsync(string email, string password);
     }
 }
