@@ -2,11 +2,10 @@
 
 namespace BusinessContact.Service.DTOs.Users
 {
-    public class UserForCreationDto
+    public class UserForUpdateDto
     {
         [Required(ErrorMessage = "FirstName is required")]
         public string FirstName { get; set; }
-
         public string LastName { get; set; }
 
         
@@ -17,9 +16,6 @@ namespace BusinessContact.Service.DTOs.Users
         [Required(ErrorMessage = "Email is required")]
         [EmailAddress]
         public string Email { get; set; }
-        
-        
-        [Required(ErrorMessage = "Password is required")]
-        public string Password { get; set; }
+
     }
 }
